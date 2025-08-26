@@ -53,7 +53,6 @@ func handler(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, "Failed to encode message", http.StatusInternalServerError)
 		return
 	}
-
 }
 func main() {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
