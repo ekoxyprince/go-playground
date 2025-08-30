@@ -1,0 +1,5 @@
+bestpractices
+1. Use sync. Mutex or sync.RWMutex ---> Prevents data races
+2. Use defer Unlock() immediately after Lock()->prevents forgetting to Unlock
+3. Acquire locks in a fixed order prevents deadlocks
+4. Use channels when possible -> Reduces shared state
